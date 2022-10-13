@@ -1,1 +1,3 @@
-console.log("First Build (in Node.js and without HTML)")
+import ReactDOM from "react-dom";
+
+ReactDOM.render("Hello, World!", document.body)
