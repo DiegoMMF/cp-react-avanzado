@@ -1,4 +1,4 @@
-import HtmlWebpackPlugin from "html-webpack-plugin";
+import HtmlWebpackPlugin from 'html-webpack-plugin'
 
 export default {
   output: {
@@ -6,7 +6,7 @@ export default {
   },
   plugins: [
     new HtmlWebpackPlugin({
-      template: "src/index.html"
+      template: 'src/index.html'
     })
   ],
   module: {
