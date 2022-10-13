@@ -5,6 +5,28 @@ export default {
     filename: 'app.bundle.js'
   },
   plugins: [
-    new HtmlWebpackPlugin()
+    new HtmlWebpackPlugin({
+      template: "src/index.html"
+    })
+  ],
+  module: {
+    rules: [
+      /* {
+        test: /\.html$/i,
+        loader: "html-loader",
+      }, */
+      /* {
+        test: /\.html$/,
+        use: [
+          {
+            loader: 'html-loader',
+          },
+        ],
+      }, */
+      {
+        test: /\.html$/,
+        use: 'html-loader'
+      },
   ]
+  }
 }
