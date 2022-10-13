@@ -1,2 +1,4 @@
-export const App = "Hello World 3.0"
+import React from "react"
+
+export const App = <h1>Hello World 4.0</h1>
 

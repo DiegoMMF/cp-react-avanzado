@@ -11,22 +11,19 @@ export default {
   ],
   module: {
     rules: [
-      /* {
-        test: /\.html$/i,
-        loader: "html-loader",
-      }, */
-      /* {
-        test: /\.html$/,
-        use: [
-          {
-            loader: 'html-loader',
-          },
-        ],
-      }, */
       {
-        test: /\.html$/,
-        use: 'html-loader'
-      },
-  ]
+        test: /\.jsx$/,
+        exclude: /node_modules/,
+        use: {
+          loader: 'babel-loader',
+          options: {
+            presets: [
+              '@babel/preset-env',
+              '@babel/preset-react'
+            ]
+          }
+        }
+      }
+    ]
   }
 }
