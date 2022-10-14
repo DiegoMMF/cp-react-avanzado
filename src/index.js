@@ -1,16 +1,14 @@
 // Since React 18:
-
+import React from 'react'
 import { createRoot } from 'react-dom/client'
-import { App } from './pages/App.jsx'
+import { App } from './App.jsx'
 
 const container = document.getElementById('app')
-
-console.log("Hello World")
 
 const root = createRoot(container)
 // createRoot(container!) if you use TypeScript
 
-root.render(App) // it works
+root.render(<App tab='home' />) // it works
 
 // root.render(<App tab="home" />);
 
