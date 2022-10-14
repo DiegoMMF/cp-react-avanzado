@@ -26,5 +26,11 @@ export const ListOFCategories = () => (
 
 const UnorderedList = styled.ul`
     list-style: none;
+    display: flex;
+    overflow: scroll;
+    width: 100%;
 `
 
+const ListItem = styled.li`
+
+`
