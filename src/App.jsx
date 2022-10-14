@@ -1,4 +1,6 @@
 import React from "react"
-import { Category } from "./components/Category.jsx"
+import { ListOFCategories } from "./components/ListOFCategories.jsx"
 
-export const App = () => <Category />
+export const App = () => (
+    <ListOFCategories />
+)
