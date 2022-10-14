@@ -5,7 +5,7 @@ import { App } from './pages/App.jsx'
 
 const container = document.getElementById('app')
 
-console.log("Hello World")
+console.log("Hello World again")
 
 const root = createRoot(container)
 // createRoot(container!) if you use TypeScript
