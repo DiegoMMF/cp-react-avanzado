@@ -1,6 +1,7 @@
 import React from 'react'
-import styled, { keyframes } from 'styled-components'
+import styled from 'styled-components'
 import { MdFavoriteBorder } from "react-icons/md"
+import { fadeIn } from '../styles/animation'
 
 const DEFAULT_IMAGE = 'https://i.imgur.com/LXThhia.jpeg'
 
@@ -29,7 +30,7 @@ const ImgWrapper = styled.div`
 `
 
 const Img = styled.img`
-    animation: 1s ${fadeInKeyFrames} ease;
+  ${fadeIn()}
   box-shadow: 0 10px 14px rgba(0, 0, 0, .2);
   height: 100%;
   object-fit: cover;
@@ -45,16 +46,4 @@ const Button = styled.button`
   & svg {
     margin-right: 4px;
   }
-`
-
-const fadeInKeyFrames = keyframes`
-    from {
-        filter: blur(5px);
-        opacity: 0;
-    }
-
-    to {
-        filter: blur(0);
-        opacity: 100%;
-    }
 `
