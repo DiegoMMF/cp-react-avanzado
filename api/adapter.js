@@ -11,6 +11,7 @@ export const db = new Low(adapter)
 
 // Read data from JSON file, this will set db.data content
 await db.read()
+console.log(db.data)
 
 // If file.json doesn't exist, db.data will be null
 // Set default data
