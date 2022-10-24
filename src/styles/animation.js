@@ -11,6 +11,8 @@ const fadeInKeyframes = keyframes`
     opacity: 1;
   }
 `
+
+// animación totalmente reutilizable
 export const fadeIn = ({
   time = '1s',
   type = 'ease' 
