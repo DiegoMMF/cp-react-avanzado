@@ -6,6 +6,9 @@ export const ListOfPhotoCards = () => (
         <PhotoCard />
         <PhotoCard />
         <PhotoCard />
+        <PhotoCard />
+        <PhotoCard />
+        <PhotoCard />
     </ul>
 )
 

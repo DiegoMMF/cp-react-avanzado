@@ -15,10 +15,3 @@ db.data = db.data || { posts: [] } // for node < v15.x
 
 // db.defaults(json).write()
 
-let a = 1;
-
-a = a + 1;
-
-a++
-
-a += 1;
